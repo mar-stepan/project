@@ -1,0 +1,38 @@
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+
+.about{
+  margin-top: 2%;
+  position: relative;
+  .about-container{
+    position: absolute;
+    color: wheat;
+    top: 25%;
+    left: 5%;
+  }
+.about-h{
+  display: flex;
+  align-items: center;
+  h3{
+    margin-right: 2%;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+}
+  .image{
+    width: 6%;
+    animation: spin 10s linear 0s infinite;
+  }
+  .about-text{
+    text-align: center;
+    margin-right: 70%;
+   .second-p{
+   }
+    .four-p{
+    }
+
+  }
+}

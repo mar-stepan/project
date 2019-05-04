@@ -1,0 +1,15 @@
+<div id="club" class="mt-2 pt-3">
+  <div fxLayout="column" fxLayoutAlign="center center" class="title-section p-2 mb-2">
+    <h1 class="mb-3">Types</h1>
+  </div>
+</div>
+
+<div>
+<mat-card *ngFor="let type of types">
+  <div class="mat-card__img-container"><img mat-card-image class="mat-card__image" src="{{type.profilePicture}}"> </div>
+  <mat-card-content>
+    <h3>{{type.name}}</h3>
+    <p class="mat-card__description secondary-text-color mt-2">{{type.description}}</p>
+  </mat-card-content>
+</mat-card>
+</div>

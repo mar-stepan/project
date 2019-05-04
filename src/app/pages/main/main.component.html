@@ -1,0 +1,22 @@
+<mat-toolbar class="landing-toolbar mat-elevation-z4">
+  <div>
+    <a href="#"><img src="../../../assets/image/cos.png" class="img-cos"></a>
+  </div>
+  <div class="item-menu">
+    <button *ngFor="let item of menuItem" mat-button [ngx-scroll-to]="item" class="mx-1">{{item}}</button>
+
+    <a mat-raised-button target="blank">LogIn</a>
+  </div>
+
+
+</mat-toolbar>
+<div>
+  <img src="../../../assets/image/title2.jpg" style="width: 100%" alt="">
+</div>
+
+<div class="main-content">
+  <app-about></app-about>
+  <!--<app-facts></app-facts>-->
+  <app-types></app-types>
+  <!--<app-about></app-about>-->
+</div>

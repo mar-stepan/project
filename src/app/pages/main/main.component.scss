@@ -1,0 +1,12 @@
+.landing-toolbar{
+  display: flex;
+  justify-content: space-between;
+  .img-cos{
+    width: 20%;
+    margin-left: 15%;
+  }
+  .item-menu {
+    margin-right: 5%;
+    word-spacing: 15px;
+  }
+}
