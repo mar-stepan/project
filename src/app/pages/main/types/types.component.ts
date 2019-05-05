@@ -9,11 +9,11 @@ import {MainService} from '../main.service';
 export class TypesComponent implements OnInit {
 
   public types;
-  constructor(private sevice: MainService) {
+  constructor(private service: MainService) {
   }
 
   ngOnInit() {
-    this.types = this.sevice.getTypes();
+    this.types = this.service.getTypes();
   }
 
 }
