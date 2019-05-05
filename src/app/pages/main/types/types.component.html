@@ -1,15 +1,26 @@
-<div id="club" class="mt-2 pt-3">
-  <div fxLayout="column" fxLayoutAlign="center center" class="title-section p-2 mb-2">
+<div id="types">
+<div class="container d-flex justify-content-center">
     <h1 class="mb-3">Types</h1>
-  </div>
 </div>
 
-<div>
-<mat-card *ngFor="let type of types">
-  <div class="mat-card__img-container"><img mat-card-image class="mat-card__image" src="{{type.profilePicture}}"> </div>
-  <mat-card-content>
-    <h3>{{type.name}}</h3>
-    <p class="mat-card__description secondary-text-color mt-2">{{type.description}}</p>
-  </mat-card-content>
-</mat-card>
+<div class="container">
+  <div class="row">
+<ng-container *ngFor="let type of types">
+    <div class="col-md-6 col-lg-4">
+      <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="{{type.profilePicture}}">
+        <div class="card-body justify-content-center">
+          <p class="card-text">
+            {{type.description}}
+          </p>
+          <button class="btn btn-primary" [routerLink]="'/' + type.key" routerLinkActive="active">Read More</button>
+        </div>
+      </div>
+      </div>
+    </div>
+</ng-container>
+  </div>
+
+</div>
 </div>

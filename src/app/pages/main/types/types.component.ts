@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from '../main.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-types',
@@ -9,7 +10,8 @@ import {MainService} from '../main.service';
 export class TypesComponent implements OnInit {
 
   public types;
-  constructor(private service: MainService) {
+  constructor(private service: MainService,
+              private router: Router) {
   }
 
   ngOnInit() {

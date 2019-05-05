@@ -1,22 +1,38 @@
-<mat-toolbar class="landing-toolbar mat-elevation-z4">
-  <div>
-    <a href="#"><img src="../../../assets/image/cos.png" class="img-cos"></a>
+<nav class="navbar navbar-expand-lg navbar-light navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+          <a href="#"><img src="../../../assets/image/cos.png" class="img-cos"></a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" ngx-scroll-to="about"  [ngx-scroll-to-duration]="300">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" ngx-scroll-to="facts"  [ngx-scroll-to-duration]="300">Facts</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" ngx-scroll-to="types"  [ngx-scroll-to-duration]="300">Types</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" ngx-scroll-to="contacts"  [ngx-scroll-to-duration]="300">Contacts</a>
+        </li>
+        <li>
+          <a mat-raised-button target="blank">Sign In</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="item-menu">
-    <button *ngFor="let item of menuItem" mat-button [ngx-scroll-to]="item" class="mx-1">{{item}}</button>
-
-    <a mat-raised-button target="blank">Log In</a>
-  </div>
-
-
-</mat-toolbar>
+</nav>
 <div>
   <img src="../../../assets/image/title2.jpg" style="width: 100%" alt="">
 </div>
 
 <div class="main-content">
   <app-about></app-about>
-  <!--<app-facts></app-facts>-->
+  <app-facts></app-facts>
   <app-types></app-types>
-  <!--<app-about></app-about>-->
+  <app-contacts></app-contacts>
 </div>

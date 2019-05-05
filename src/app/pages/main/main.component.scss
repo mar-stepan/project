@@ -1,12 +1,14 @@
-.landing-toolbar{
-  display: flex;
-  justify-content: space-between;
-  .img-cos{
-    width: 20%;
-    margin-left: 15%;
-  }
-  .item-menu {
-    margin-right: 5%;
-    word-spacing: 15px;
-  }
+.navbar {
+  background: #316d56;
+}
+.nav-link{
+  cursor: pointer;
+}
+.img-cos {
+  width: 20%;
+}
+
+.navbar-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
 }
