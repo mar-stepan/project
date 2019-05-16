@@ -1,0 +1,24 @@
+<div class="main">
+<img src="../../../assets/image/title.jpg" alt="GOOD!" class="image">
+<form>
+  <div class="login-form">
+    <div>
+      <div class="input">
+        <mat-icon> sentiment_satisfied_alt</mat-icon>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Login" [(ngModel)]="userName" name="something">
+        </mat-form-field>
+      </div>
+      <div class="input">
+        <mat-icon>https</mat-icon>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" [(ngModel)]="password" name="something">
+        </mat-form-field>
+      </div>
+    </div>
+    <a (click)="login()" class="welcome">Welcome</a>
+    <p></p>
+    <div *ngIf="sorry">Sorry dud, but next time !</div>
+  </div>
+</form>
+</div>

@@ -1,0 +1,44 @@
+
+.main{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+.login-form{
+  position: absolute;
+  border: 6px solid darkgoldenrod;
+  padding: 4% 4% 2% 4%;
+  top: 5%;
+  left: 5%;
+
+  .input {
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      margin-right: 8%;
+    }
+  }
+
+  .welcome {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+    &:hover {
+    text-decoration: underline;
+  }
+  }
+}

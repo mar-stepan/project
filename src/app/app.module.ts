@@ -11,11 +11,14 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatMenuModule, MatToolbarModule} from '@angular/material';
 import { AboutComponent } from './pages/main/about/about.component';
 import { FactsComponent } from './pages/main/facts/facts.component';
 import { TypesComponent } from './pages/main/types/types.component';
 import { ContactsComponent } from './pages/main/contacts/contacts.component';
+import { LoginComponent } from './pages/login/login.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BackOfficeComponent } from './pages/back-office/back-office.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +30,13 @@ import { ContactsComponent } from './pages/main/contacts/contacts.component';
     AboutComponent,
     FactsComponent,
     TypesComponent,
-    ContactsComponent
+    ContactsComponent,
+    LoginComponent,
+    BackOfficeComponent
   ],
   imports: [
+    MatInputModule,
+    MatFormFieldModule,
     BrowserModule,
     AppRoutingModule,
     CommonModule,
