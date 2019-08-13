@@ -13,20 +13,32 @@
 //  top: 25%;
 //  left: 5%;
 //}
+.container{
+  margin-top: 3%;
 
-.about-h {
-  display: flex;
-  align-items: center;
-  h3 {
-    margin-right: 2%;
-    text-transform: uppercase;
-    font-size: 40px;
+  .about-h {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+
+    .image {
+      width: 6%;
+      animation: spin 10s linear 0s infinite;
+    }
+
+    h3 {
+      margin-right: 2%;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
   }
+  .about-text {
+    text-align: center;
+  }
+
 }
 
-.image {
-  width: 6%;
-  animation: spin 10s linear 0s infinite;
-}
+
+
 
 

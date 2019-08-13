@@ -19,6 +19,17 @@ import { ContactsComponent } from './pages/main/contacts/contacts.component';
 import { LoginComponent } from './pages/login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BackOfficeComponent } from './pages/back-office/back-office.component';
+import { AngularFireModule } from 'angularfire2';
+
+export const firebaseConfig = {
+  apiKey: 'AIzaSyDIGr5OSx_Jcwj8zhbs1lGoZkgxRL1ZN1c',
+  authDomain: 'something-new-cf50a.firebaseapp.com',
+  databaseURL: 'https://something-new-cf50a.firebaseio.com',
+  projectId: 'something-new-cf50a',
+  storageBucket: 'something-new-cf50a.appspot.com',
+  messagingSenderId: '306327080971',
+  appId: '1:306327080971:web:f1ffa73bc0f519d8'
+};
 
 @NgModule({
   declarations: [
@@ -50,6 +61,7 @@ import { BackOfficeComponent } from './pages/back-office/back-office.component';
     MatToolbarModule,
     MatCardModule,
     ScrollToModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
